@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ludo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ludo</h1>
+  <div class="app">
+    <div id="board" aria-label="Ludo board"></div>
+
+    <aside class="panel">
+      <div id="turn" class="turn">Red's turn</div>
+      <div id="die" class="die" title="Click to roll">⚀</div>
+      <button id="rollBtn" class="btn primary">Roll Dice</button>
+      <p id="status" class="status">Roll the dice to start.</p>
+      <div id="players" class="players"></div>
+      <div class="controls">
+        <label for="playerCount">Players</label>
+        <select id="playerCount">
+          <option value="2">2 (Red, Yellow)</option>
+          <option value="3">3 (Red, Green, Yellow)</option>
+          <option value="4" selected>4</option>
+        </select>
+        <button id="newGame" class="btn">New Game</button>
+      </div>
+      <p class="hint">Roll a 6 to leave home. A 6, a capture, or reaching the center gives an extra turn. Stars and colored start cells are safe.</p>
+    </aside>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
